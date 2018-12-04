@@ -35,39 +35,18 @@ $person1->SetLastname("Doe");
 
 var_dump($person1->speak());
 
-// var_dump($person1->getFirstname());
-// var_dump($person1->getLastname());
+var_dump($person1->getFirstname());
+var_dump($person1->getLastname());
 
-// 2e personne :
-	// $person2 = new Person();
+2e personne :
+	$person2 = new Person();
 	// truc pour les nuls : $person2->firstname = "Jane";
 	// truc pour les nuls : $person2->lastname = "Die";
 	
-	// $person2->SetFirstname("Jane");
-	// $person2->SetLastname("Die");
+	$person2->SetFirstname("Jane");
+	$person2->SetLastname("Die");
 	
-	// var_dump($person2->speak());
+	var_dump($person2->speak());
 	
-	// var_dump($person2->getFirstname());
-	// var_dump($person2->getLastname());
-
-class Dog {
-	private $name;
-		
-	public function setname($pname) {
-	$this->name = $pname;
-	}	
-	
-	public function __construct($pname){
-		
-	}
-		public function getname(){
-		return $this->name;
-		}		
-}
-
-$dog1 = new Dog();
-
-$dog1->setname("Doggy dog");
-
-var_dump($dog1->getname());
+	var_dump($person2->getFirstname());
+	var_dump($person2->getLastname());
